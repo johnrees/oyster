@@ -6,13 +6,13 @@ export type WalletSigner = {
   signAllTransactions(transaction: Transaction[]): Promise<Transaction[]>;
 };
 
-export declare class WalletError extends Error {
-  error: any;
-  constructor(message?: string, error?: any);
+export class WalletError extends Error {
+  constructor(message?: string, readonly error?: any) {
+    super(message);
+  }
 }
 
-export declare class WalletNotConnectedError extends WalletError {
-  name: string;
+export class WalletNotConnectedError extends WalletError {
 }
 
 export function isWalletNotConnectedError(

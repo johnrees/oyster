@@ -12,6 +12,21 @@ import { PROGRAM_VERSION_V1 } from '../registry/constants';
 import { SYSTEM_PROGRAM_ID } from '../tools/sdk/runtime';
 import { withRealmConfigAccounts } from './withRealmConfigAccounts';
 
+export const accounts = [
+  "realm",
+  "governance",
+  "proposal",
+  "proposalOwnerRecord",
+  "tokenOwnerRecord",
+  "governanceAuthority",
+  "voteRecordAddress",
+  "governingTokenMint",
+  "payer",
+  "systemProgram",
+  "rent",
+  "clock",
+] as const;
+
 export const withCastVote = async (
   instructions: TransactionInstruction[],
   programId: PublicKey,

@@ -1146,3 +1146,21 @@ export async function getNativeTreasuryAddress(
 
   return signatoryRecordAddress;
 }
+
+
+export const Types = {
+  1: Realm,
+  2: TokenOwnerRecord,
+  3: Governance,
+  4: Governance,
+  5: Proposal,
+  6: SignatoryRecord,
+  7: VoteRecord,
+  8: ProposalTransaction,
+  9: Governance,
+  10: Governance,
+  11: RealmConfigAccount,
+  12: VoteRecord,
+  13: ProposalTransaction,
+  14: ProposalTransaction
+}

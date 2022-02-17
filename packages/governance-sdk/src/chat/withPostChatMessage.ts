@@ -2,7 +2,7 @@ import { Keypair, PublicKey, TransactionInstruction } from '@solana/web3.js';
 import { GOVERNANCE_CHAT_SCHEMA } from './serialisation';
 import { serialize } from 'borsh';
 import { PostChatMessageArgs } from './instructions';
-import { GOVERNANCE_CHAT_PROGRAM_ID, ChatMessageBody } from './accounts';
+import { ChatMessageBody } from './accounts';
 import { SYSTEM_PROGRAM_ID } from '../tools/sdk/runtime';
 import { withRealmConfigAccounts } from '../governance/withRealmConfigAccounts';
 
